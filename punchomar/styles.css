@@ -1,0 +1,230 @@
+:root {
+    --rainbowGradient: linear-gradient(rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/100% 200%;
+}
+
+* {
+    cursor: none;
+}
+
+body {
+    background-color: lightpink;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: black 1px 1px;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+}
+
+.ui-left {
+    float: left;
+}
+
+.ui-right {
+    float: right;
+}
+
+.omar-container {
+    position: absolute;
+    margin-top: 75px;
+    pointer-events: none;
+}
+
+@media (min-width: 1000px) {
+    .omar-container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .omar-container {
+        width: 100%;
+    }
+}
+
+.button {
+    width: 150px;
+    border-style: outset;
+    opacity: 50%;
+    margin-bottom: 5px;
+}
+
+.button.buyable {
+    opacity: 100%;
+    cursor: pointer !important;
+    background: var(--rainbowGradient);
+    animation: moving-gradient 2s linear infinite;
+}
+
+.button.buyable * {
+    cursor: pointer !important;
+}
+
+.button.unlocked {
+    opacity: 100%;
+    cursor: pointer !important;
+}
+
+.button.unlocked * {
+    cursor: pointer !important;
+}
+
+.button.equipped {
+    border-style: inset;
+}
+
+@keyframes moving-gradient {
+    to {
+        background-position: 0 -200%
+    }
+}
+
+.score {
+    text-align: left;
+    user-select: none;
+}
+
+.hand {
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.omar {
+    height: 500px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.particle {
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.rainbow-text {
+    animation: rainbow-text 10s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-text {
+
+    100%,
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    8% {
+        color: rgb(255, 127, 0);
+    }
+
+    16% {
+        color: rgb(255, 255, 0);
+    }
+
+    25% {
+        color: rgb(127, 255, 0);
+    }
+
+    33% {
+        color: rgb(0, 255, 0);
+    }
+
+    41% {
+        color: rgb(0, 255, 127);
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+    }
+
+    58% {
+        color: rgb(0, 127, 255);
+    }
+
+    66% {
+        color: rgb(0, 0, 255);
+    }
+
+    75% {
+        color: rgb(127, 0, 255);
+    }
+
+    83% {
+        color: rgb(255, 0, 255);
+    }
+
+    91% {
+        color: rgb(255, 0, 127);
+    }
+}
+
+.wiggle {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

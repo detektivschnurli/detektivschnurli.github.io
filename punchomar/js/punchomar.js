@@ -17,8 +17,8 @@ window.addEventListener('mouseover', () => {
 });
 
 window.addEventListener('mousemove', (event) => {
-  hand.style.left = `${event.clientX - 75}px`;
-  hand.style.top = `${event.clientY - 25}px`;
+  hand.style.left = `${event.clientX - 50}px`;
+  hand.style.top = `${event.clientY - 50}px`;
 });
 
 window.addEventListener('mouseout', () => {
@@ -40,8 +40,8 @@ window.addEventListener('click', (event) => {
     particle.src = "images/" + item + "_particle.gif";
     particle.classList.add('particle');
     particle.draggable = false;
-    particle.style.left = `${event.clientX - 50}px`;
-    particle.style.top = `${event.clientY - 50}px`;
+    particle.style.left = `${event.clientX - 75}px`;
+    particle.style.top = `${event.clientY - 75}px`;
     document.body.appendChild(particle);
 
     setTimeout(() => {
