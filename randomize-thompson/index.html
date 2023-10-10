@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize Thompson</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+        p {
+            margin: 0;
+            margin-left: 50px;
+            margin-top: -15px;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            text-transform: uppercase;
+            color: #0a47ed;
+            font-size: 75px;
+            letter-spacing: 7px;
+        }
+
+        img {
+            width: 50px;
+            margin-bottom: -5px;
+        }
+
+        button {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="plus.svg">
+    <p id="t1">Wunderman</p>
+    <p id="t2">Thompson</p>
+    <button onclick="randomize()">Randomize</button>
+
+    <script>
+        const wordsT1 = ["Wunderman", "Saruman", "Thunderstrahl", "Malerband", "Ballermann", "Schlabberkrampf", "Wunderschwanz", "Untergang", "Ubermann"];
+        const wordsT2 = ["Thompson", "Kommschon", "Johnson", "Simon", "Kingkong", "Romcom", "Kulturbong", "Moron", "wisconsin"];
+
+        function randomize() {
+            document.getElementById("t1").innerHTML = wordsT1[Math.floor(Math.random() * wordsT1.length)];
+            document.getElementById("t2").innerHTML = wordsT2[Math.floor(Math.random() * wordsT2.length)];
+        }
+    </script>
+</body>
+
+</html>
