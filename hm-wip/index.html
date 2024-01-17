@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hueremichi clothing</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #cat {
+            position: relative;
+            width: 90vw;
+            max-width: 360px;
+            cursor: pointer;
+        }
+
+        #bubble {
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            width: 95px;
+            height: 72px;
+            top: 20px;
+            left: 177px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div onclick="bubbleText()" id="cat">
+            <img src="cat.png">
+            <p id="bubble"></p>
+        </div>
+    </div>
+    <script src="cat.js"></script>
+</body>
+
+</html>
