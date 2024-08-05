@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Wiedikon Grotesk;
+    src: url(../fonts/240306BahnhofWiedikonGroteskSignal-Regular.otf);
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+*:focus {
+    outline: none;
+}
+
+.f-wiedikon_grotesk {
+    font-family: Wiedikon Grotesk;
+}
