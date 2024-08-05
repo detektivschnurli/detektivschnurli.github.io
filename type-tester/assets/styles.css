@@ -13,6 +13,10 @@ h1 {
     outline: none;
 }
 
+.type-tester {
+    line-height: calc(initial - initial / 10);
+}
+
 .f-wiedikon_grotesk {
     font-family: Wiedikon Grotesk;
 }
