@@ -14,7 +14,8 @@ h1 {
 }
 
 .type-tester {
-    line-height: calc(initial - initial / 10);
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .f-wiedikon_grotesk {
