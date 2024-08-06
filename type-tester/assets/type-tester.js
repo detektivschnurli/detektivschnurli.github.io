@@ -1,4 +1,4 @@
 fitty('.type-tester', {
-    minSize: 70,
+    minSize: 22,
     multiLine: true,
 });
