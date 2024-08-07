@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100% - 40px);
+    border: none;
+}
+
+#navBar {
+    display: flex;
+    height: 50px;
+    border-bottom: solid 3px;
+}
+
+.button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    transform: scale(75%);
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(90%);
+}
+
+#back {
+    background-image: url(img/icon_back.png);
+}
+
+#forth {
+    background-image: url(img/icon_forth.png);
+}
+
+#home {
+    background-image: url(img/icon_home.png);
+}
+
+#shit {
+    background-image: url(img/icon_shit.png);
+}
