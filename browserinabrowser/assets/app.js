@@ -9,4 +9,4 @@ function openPage(url) {
     console.log(history);
 }
 
-openPage(searchInput.innerHTML);
+openPage(searchInput.value);
