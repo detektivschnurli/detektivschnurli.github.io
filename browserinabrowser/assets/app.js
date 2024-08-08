@@ -13,7 +13,7 @@ function openPage(url) {
         url = "https://" + url;
         openPage(url);
     } else {
-        url = "https://duckduckgo.com/?t=h_&q=" + url + "&ia=web";
+        url = "https://duckduckgo.com/" + url;
         openPage(url);
     }
 }
