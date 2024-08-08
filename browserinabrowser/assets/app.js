@@ -4,7 +4,7 @@ const iFrame = document.getElementById("iframe");
 const history = [];
 
 function openPage(url) {
-    if (url.startsWith('https://')) {
+    if ((url.startsWith('https://')) || (url == "home.html")) {
         searchInput.value = url;
         iFrame.src = url;
         history.push(url);
